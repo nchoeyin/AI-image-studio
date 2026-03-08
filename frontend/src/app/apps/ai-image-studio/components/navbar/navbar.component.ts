@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterModule } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { RouterLink, RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +7,9 @@ import { RouterLink, RouterModule } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  private router = inject(Router);
+  redirectToHome() {
+    this.router.navigate(['/ai-studio']);
+  }
+}
