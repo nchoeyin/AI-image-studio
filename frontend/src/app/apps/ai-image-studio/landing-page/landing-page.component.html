@@ -1,0 +1,114 @@
+<div class="min-h-screen bg-slate-950 text-slate-50 flex flex-col">
+  <!-- Navbar -->
+  <header class="border-b border-slate-800">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-500 text-xl font-bold">
+          AI
+        </span>
+        <span class="text-lg font-semibold tracking-tight">
+          Image Studio
+        </span>
+      </div>
+
+      <nav class="hidden gap-6 text-sm text-slate-300 md:flex">
+        <a href="#" class="hover:text-white">Dashboard</a>
+        <a href="#" class="hover:text-white">Gallery</a>
+        <a href="#" class="hover:text-white">Pricing</a>
+      </nav>
+
+      <button
+        class="rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-400">
+        Sign in
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="flex-1">
+    <section class="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 lg:flex-row lg:items-center">
+      <div class="flex-1 space-y-6">
+        <p class="inline-flex items-center gap-2 rounded-full bg-slate-900/60 px-3 py-1 text-xs font-medium text-slate-300 ring-1 ring-slate-700/60">
+          <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          Live AI image generation
+        </p>
+
+        <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          Turn your ideas into images in seconds.
+        </h1>
+
+        <p class="max-w-xl text-sm text-slate-300">
+          Type a prompt, pick a style, and let the studio generate high‑quality visuals for your games,
+          products, or social posts—no design skills required.
+        </p>
+
+        <form class="flex flex-col gap-3 sm:flex-row">
+          <input
+            type="text"
+            placeholder="A neon-lit gaming lounge in cyberpunk Bengaluru"
+            class="w-full rounded-lg border border-slate-700 bg-slate-900/70 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500" />
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-400">
+            Generate
+          </button>
+        </form>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs text-slate-400">
+          <span class="inline-flex items-center gap-2">
+            <span class="h-6 w-6 rounded-full bg-slate-800"></span>
+            No GPU required
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <span class="h-6 w-6 rounded-full bg-slate-800"></span>
+            Commercial friendly
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <span class="h-6 w-6 rounded-full bg-slate-800"></span>
+            Built with Angular + Tailwind
+          </span>
+        </div>
+      </div>
+
+      <!-- Preview card -->
+      <div class="flex-1">
+        <div
+          class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/70 shadow-2xl shadow-indigo-500/20">
+          <div class="border-b border-slate-800 bg-slate-900/70 px-4 py-3 text-xs text-slate-300">
+            <span class="font-medium text-slate-100">Preview</span>
+            <span class="ml-2 text-slate-500">Generated image</span>
+          </div>
+          <div class="aspect-video bg-gradient-to-br from-indigo-500 via-purple-500 to-amber-400"></div>
+          <div class="space-y-2 px-4 py-4 text-xs text-slate-300">
+            <p class="font-medium text-slate-100">
+              Prompt
+            </p>
+            <p class="line-clamp-2 text-slate-400">
+              A futuristic gaming lounge filled with RGB lights, people playing on PS5, and neon signs in
+              the background, ultra‑wide cinematic shot.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="rounded-full bg-slate-800 px-2 py-1 text-[11px] text-slate-200">
+                16:9
+              </span>
+              <span class="rounded-full bg-slate-800 px-2 py-1 text-[11px] text-slate-200">
+                Cyberpunk
+              </span>
+              <span class="rounded-full bg-slate-800 px-2 py-1 text-[11px] text-slate-200">
+                High detail
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 text-xs text-slate-500">
+      <span>© 2026 AI Image Studio</span>
+      <span>Built with Angular & Tailwind</span>
+    </div>
+  </footer>
+</div>
